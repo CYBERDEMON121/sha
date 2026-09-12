@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THEOS IMPEX — Connecting Quality Products to Global Markets</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body class="splash-body">
+
+  <!-- ============================================
+       SPLASH INTRO — plays for 8 seconds, then
+       redirects to home.html
+       ============================================ -->
+  <div class="splash" id="splash">
+
+    <!-- Video background (images/splash.mp4).
+         The animated fallback below is shown until the video plays. -->
+    <video class="splash-video" id="splashVideo" autoplay muted playsinline loop
+           src="images/splash.mp4"></video>
+
+    <!-- Animated gradient/ocean fallback (shown while no video is loaded) -->
+    <div class="splash-bg-fallback" id="splashFallback"></div>
+
+    <div class="splash-scrim"></div>
+
+    <div class="splash-content">
+      <div class="splash-logo-wrap">
+        <img src="images/logo.png" alt="THEOS IMPEX Logo">
+      </div>
+      <h1 class="splash-title">THEOS <span class="splash-fill">IMPEX</span></h1>
+      <p class="splash-quote">
+        "Delivering Quality. Building Trust. Connecting Markets."
+      </p>
+    </div>
+
+    <div class="splash-progress" aria-hidden="true">
+      <div class="splash-progress-fill"></div>
+    </div>
+    <p class="splash-hint" id="splashHint">Entering Site</p>
+  </div>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    (function () {
+      var SPLASH_MS = 8000;
+      var splash = document.getElementById('splash');
+      var video = document.getElementById('splashVideo');
+      var fallback = document.getElementById('splashFallback');
+      var hint = document.getElementById('splashHint');
+      var redirected = false;
+
+      // Show the video over the fallback as soon as it can be displayed.
+      function showVideo() {
+        if (fallback && video && video.readyState >= 2) {
+          fallback.classList.add('is-hidden');
+        }
+      }
+
+      // Kick off playback explicitly — browsers autoplay muted+playsinline,
+      // but an explicit play() is more reliable.
+      function startPlayback() {
+        if (video) {
+          var p = video.play();
+          if (p && p.then) p.then(showVideo).catch(function () {});
+        }
+      }
+
+      // If the video file is missing/unreadable, keep the animated fallback.
+      video.addEventListener('error', function () {
+        if (fallback) fallback.classList.remove('is-hidden');
+      });
+      video.addEventListener('canplay', startPlayback);
+      video.addEventListener('loadeddata', showVideo);
+      video.addEventListener('playing', showVideo);
+      video.addEventListener('canplaythrough', showVideo);
+
+      // Cover the case where the video already has data before listeners attach.
+      showVideo();
+      startPlayback();
+
+      function redirect() {
+        if (redirected) return;
+        redirected = true;
+        if (hint) hint.textContent = 'Welcome';
+        splash.classList.add('splash-out');
+        setTimeout(function () {
+          window.location.href = 'home.html';
+        }, 450);
+      }
+
+      // Redirect after the 8s window regardless of playback state.
+      setTimeout(redirect, SPLASH_MS);
+
+      // Optional: allow the visitor to enter early.
+      document.addEventListener('keydown', redirect);
+      splash.addEventListener('click', redirect);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — THEOS IMPEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="icon" href="../images/favicon.png">
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../home.html" class="nav-logo">
+        <img src="../images/logo.png" alt="THEOS IMPEX">
+        <span class="nav-logo-text">THEOS IMPEX</span>
+      </a>
+      <div class="nav-links">
+        <a href="../home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="market.html">Markets</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb anim anim-fade-in-down">
+          <a href="../home.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>Contact</span>
+        </nav>
+        <h1 class="page-hero-title anim anim-fade-in-up anim-delay-1">Let's Start <span class="gradient">Trading</span></h1>
+        <p class="page-hero-desc anim anim-fade-in-up anim-delay-2">Tell us about your requirements and our team will get back to you with the best sourcing and trade solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+        <!-- Left: Form -->
+        <form class="contact-form contact-form-white anim anim-fade-in-left" id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Full Name</label>
+            <input type="text" id="cf-name" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" class="form-input" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-phone">Phone</label>
+            <input type="tel" id="cf-phone" name="phone" class="form-input" placeholder="+91 ...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-product">Product Interest</label>
+            <select id="cf-product" name="product" class="form-input">
+              <option>Fresh Vegetables</option>
+              <option>Fresh Fruits</option>
+              <option>Spices & Agricultural</option>
+              <option>Seafood & Marine</option>
+              <option>Metal Scrap</option>
+              <option>Industrial Metal</option>
+              <option>Plastic Scrap</option>
+              <option>Paper Scrap</option>
+              <option>Recyclable Materials</option>
+              <option>Customized Sourcing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" class="form-textarea" placeholder="Tell us about your requirements..." required></textarea>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+            <button type="button" id="whatsappBtn" class="btn btn-whatsapp" style="width:100%; justify-content:center;">WhatsApp</button>
+          </div>
+        </form>
+
+        <!-- Right: Contact Info -->
+        <div class="anim anim-fade-in-right">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">✉</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <a class="contact-info-value" href="mailto:info@theosimpex.com">info@theosimpex.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">☎</div>
+            <div>
+              <div class="contact-info-label">Office Line</div>
+              <a class="contact-info-value" href="tel:+914651253325">04651-253325</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">💬</div>
+            <div>
+              <div class="contact-info-label">WhatsApp</div>
+              <a class="contact-info-value" href="https://wa.me/919361123843">+91 93611 23843</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label">Address</div>
+              <a class="contact-info-value" href="https://maps.google.com/?q=Arumanai+Kanyakumari+Tamil+Nadu">6/161/6, ST-2, Kunchaluvilai, Arumanai (P.O), Pin-629151, Kanyakumari District, Tamil Nadu, India</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section section-light" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label anim anim-fade-in-down">Find Us</span>
+        <h2 class="section-title mt-2 anim anim-fade-in-up anim-delay-1">Our Location</h2>
+      </div>
+      <div class="anim anim-fade-in-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.263348973036!2d77.24422077501129!3d8.375736191661776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInMzIuNyJOIDc3wrAxNCc0OC41IkU!5e0!3m2!1sen!2sin!4v1782209740653!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: var(--radius-lg);" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../home.html" class="nav-logo" style="margin-bottom: 0.5rem;">
+            <img src="../images/logo.png" alt="THEOS IMPEX" style="height: 35px;">
+            <span class="nav-logo-text" style="color: var(--text-on-dark);">THEOS IMPEX</span>
+          </a>
+          <p style="color: var(--text-on-dark-muted);">Bridging India's finest products with global markets. Quality exports, trusted partnerships, delivered with integrity.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="../home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="market.html">Markets</a>
+            <a href="contact.html" class="active">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Products</h4>
+          <div class="footer-links">
+            <a href="products.html">Vegetables</a>
+            <a href="products.html">Fruits</a>
+            <a href="products.html">Spices</a>
+            <a href="products.html">Seafood</a>
+            <a href="products.html">Recyclable Materials</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:info@theosimpex.com">info@theosimpex.com</a>
+            <a href="tel:+919361123843">+91 93611 23843</a>
+            <a>Kanyakumari, Tamil Nadu, India</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 THEOS IMPEX. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">&#102;</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">&#9737;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919361123843" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">&#9742;</a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      const getData = () => ({
+        name: (form.querySelector('#cf-name').value || '').trim(),
+        email: (form.querySelector('#cf-email').value || '').trim(),
+        phone: (form.querySelector('#cf-phone').value || '').trim(),
+        product: form.querySelector('#cf-product').value || '',
+        message: (form.querySelector('#cf-message').value || '').trim()
+      });
+
+      const buildMessage = (d) => [
+        'Name: ' + d.name,
+        'Email: ' + d.email,
+        d.phone ? 'Phone: ' + d.phone : null,
+        'Product Interest: ' + d.product,
+        '',
+        d.message
+      ].filter(Boolean).join('\n');
+
+      const showSuccess = () => {
+        form.innerHTML = '<div style="text-align:center; padding:3rem;"><h3 style="font-family:var(--font-heading); font-size:1.5rem; margin-bottom:1rem;">Thank You!</h3><p style="color:var(--text-secondary);">Your message has been sent. We will get back to you soon.</p></div>';
+      };
+
+      const validate = () => {
+        for (const id of ['cf-name', 'cf-email', 'cf-message']) {
+          const el = document.getElementById(id);
+          if (!el.value || !el.value.trim()) return false;
+        }
+        return true;
+      };
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (!validate()) return;
+
+        const d = getData();
+        const submitBtn = form.querySelector('.btn-primary');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        const payload = {
+          name: d.name,
+          email: d.email,
+          phone: d.phone,
+          product: d.product,
+          message: d.message,
+          _subject: 'Enquiry from ' + (d.name || 'Website Visitor') + ' - ' + (d.product || 'General')
+        };
+
+        try {
+          const res = await fetch('https://formsubmit.co/ajax/info@theosimpex.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (!res.ok) throw new Error('Request failed');
+          showSuccess();
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          alert('Something went wrong. Please try again, or email info@theosimpex.com directly.');
+        }
+      });
+
+      document.getElementById('whatsappBtn').addEventListener('click', () => {
+        const d = getData();
+        const message = buildMessage(d) + '\n\nSent via theosimpex.com contact page.';
+        window.open('https://wa.me/919361123843?text=' + encodeURIComponent(message), '_blank');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Markets — THEOS IMPEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="icon" href="../images/favicon.png">
+</head>
+<body>
+
+  <!-- ============================================
+       SCROLL PROGRESS BAR
+       ============================================ -->
+  <div class="scroll-progress"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../home.html" class="nav-logo">
+        <img src="../images/logo.png" alt="THEOS IMPEX">
+        <span class="nav-logo-text">THEOS IMPEX</span>
+      </a>
+      <div class="nav-links">
+        <a href="../home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="market.html" class="active">Markets</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================
+         PAGE HERO
+         ============================================ -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <nav class="breadcrumb anim anim-fade-in-down">
+            <a href="../home.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Markets</span>
+          </nav>
+          <h1 class="page-hero-title anim anim-fade-in-up anim-delay-1">Connecting India to the <span class="gradient">World</span></h1>
+          <p class="page-hero-desc anim anim-fade-in-up anim-delay-2">Click a region on the map to explore the products we supply and our trade reach across each market.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         DATA COVERAGE — INTERACTIVE MAP
+         ============================================ -->
+    <section class="section coverage section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up">Data Coverage</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-1">Our Global Trade Network</h2>
+          <p class="section-subtitle anim anim-fade-in-up anim-delay-2">From our base in Kanyakumari, India, THEOS IMPEX ships quality products across continents. Explore each market below.</p>
+        </div>
+
+        <!-- Interactive Map -->
+        <div class="coverage-map-wrap anim anim-fade-in-scale anim-delay-2">
+          <div id="marketWorldMap" class="worldmap-host"></div>
+        </div>
+
+        <!-- Hint -->
+        <p class="region-hint anim anim-fade-in-up">Tip: click any region marker above to view trade details</p>
+
+        <!-- Region detail panel -->
+        <div class="region-panel anim anim-fade-in-up" id="regionPanel">
+          <div class="region-panel-head">
+            <span class="region-panel-icon" id="rpIcon">🌏</span>
+            <span class="region-panel-title" id="rpTitle">Select a Market</span>
+          </div>
+          <p class="region-panel-desc" id="rpDesc">THEOS IMPEX connects Indian quality products with buyers across Asia, the Middle East, Europe, Africa, and beyond. Click a region on the map to see what we supply there and our trade reach.</p>
+          <div class="region-panel-tags" id="rpTags"></div>
+          <div class="region-panel-metrics" id="rpMetrics"></div>
+        </div>
+
+        <!-- Stat band -->
+        <div class="coverage-stats anim anim-fade-in-up">
+          <div class="coverage-stat">
+            <div class="coverage-stat-value" data-count="5" data-suffix="+">0</div>
+            <div class="coverage-stat-label">Continents Served</div>
+          </div>
+          <div class="coverage-stat">
+            <div class="coverage-stat-value" data-count="10" data-suffix="+">0</div>
+            <div class="coverage-stat-label">Product Categories</div>
+          </div>
+          <div class="coverage-stat">
+            <div class="coverage-stat-value" data-count="100" data-suffix="%">0</div>
+            <div class="coverage-stat-label">Quality Commitment</div>
+          </div>
+          <div class="coverage-stat">
+            <div class="coverage-stat-value" data-count="24" data-suffix="/6">0</div>
+            <div class="coverage-stat-label">Support (Mon–Sat)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         REGION CARDS
+         ============================================ -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up">Where We Trade</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-1">Explore Our Markets</h2>
+        </div>
+        <div class="grid grid-3" data-stagger>
+          <div class="market-card anim wm-clickable" data-region="asia">
+            <div class="market-icon">🌏</div>
+            <h3 class="market-name">Asia</h3>
+            <p class="market-desc">Southeast Asia, South Asia, East Asia — our primary growth corridor for produce, spices, and seafood.</p>
+          </div>
+          <div class="market-card anim wm-clickable" data-region="middleeast">
+            <div class="market-icon">🌍</div>
+            <h3 class="market-name">Middle East</h3>
+            <p class="market-desc">Gulf countries and MENA region with strong demand for quality commodities and industrial materials.</p>
+          </div>
+          <div class="market-card anim wm-clickable" data-region="europe">
+            <div class="market-icon">🌍</div>
+            <h3 class="market-name">Europe</h3>
+            <p class="market-desc">Established markets with high standards for agricultural and industrial goods, certified supply chain.</p>
+          </div>
+          <div class="market-card anim wm-clickable" data-region="africa">
+            <div class="market-icon">🌍</div>
+            <h3 class="market-name">Africa</h3>
+            <p class="market-desc">Fast-growing continent with expanding import needs across industries and agriculture.</p>
+          </div>
+          <div class="market-card anim wm-clickable" data-region="global">
+            <div class="market-icon">🌎</div>
+            <h3 class="market-name">Other Markets</h3>
+            <p class="market-desc">We serve buyers across all international markets — wherever quality matters. Contact us for your region.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA
+         ============================================ -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="anim anim-fade-in-scale" style="background: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 50%, var(--blue-800) 100%); border-radius: var(--radius-lg); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden;">
+          <div style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 60%);"></div>
+          <div style="position: relative; z-index: 1;">
+            <h2 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 1rem;">Looking to import from India?</h2>
+            <p style="font-size: 1.1rem; color: var(--blue-100); margin-bottom: 2rem; max-width: 550px; margin-left: auto; margin-right: auto;">
+              Let THEOS IMPEX be your trusted trade partner for reliable sourcing and global market access.
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="background: var(--white); color: var(--blue-900);">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../home.html" class="nav-logo" style="margin-bottom: 0.5rem;">
+            <img src="../images/logo.png" alt="THEOS IMPEX" style="height: 36px;">
+            <span class="nav-logo-text" style="color: var(--text-on-dark);">THEOS IMPEX</span>
+          </a>
+          <p style="color: var(--text-on-dark-muted);">A trusted import-export company based in Kanyakumari, India. Connecting quality Indian products to global markets with integrity and excellence.</p>
+          <div class="footer-socials mt-2">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="../home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="market.html">Markets</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Products</h4>
+          <div class="footer-links">
+            <a href="products.html">Fresh Vegetables</a>
+            <a href="products.html">Fresh Fruits</a>
+            <a href="products.html">Spices &amp; Agricultural</a>
+            <a href="products.html">Seafood &amp; Marine</a>
+            <a href="products.html">Metal Scrap</a>
+            <a href="products.html">Recyclable Materials</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Office</h4>
+          <div class="footer-links">
+            <p style="color: var(--text-on-dark-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 0.5rem;">THEOS IMPEX<br>Kanyakumari,<br>Tamil Nadu, India</p>
+            <a href="mailto:info@theosimpex.com">info@theosimpex.com</a>
+            <a href="tel:+919361123843">+91 93611 23843</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 THEOS IMPEX. All rights reserved.</p>
+        <p>Delivering Quality. Building Trust. Connecting Markets.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919361123843" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Region panel interactivity -->
+  <script>
+    (function () {
+      var regions = {
+        asia: {
+          icon: '🌏', title: 'Asia',
+          desc: 'Our primary growth corridor — Southeast Asia, South Asia, and East Asia demand India’s fresh produce, spices, and seafood. THEOS IMPEX maintains strong supplier relationships across Tamil Nadu and Kerala to serve this high-volume region.',
+          tags: ['Fresh Vegetables', 'Fresh Fruits', 'Spices', 'Seafood', 'Recyclables'],
+          metrics: [['1,200+', 'Active Buyers'], ['850+', 'Shipments / yr'], ['6', 'Countries']]
+        },
+        middleeast: {
+          icon: '🌍', title: 'Middle East',
+          desc: 'The Gulf and MENA region rely on imports for food security and industrial inputs. We supply quality commodities and materials with reliable, documented logistics to major Gulf ports.',
+          tags: ['Spices', 'Metal Scrap', 'Industrial Metal', 'Fruits', 'Paper Scrap'],
+          metrics: [['640+', 'Active Buyers'], ['420+', 'Shipments / yr'], ['5', 'Countries']]
+        },
+        europe: {
+          icon: '🌍', title: 'Europe',
+          desc: 'Established European markets hold the highest standards for agricultural and industrial goods. Our certified, compliant supply chain meets EU import requirements with full traceability.',
+          tags: ['Spices', 'Seafood', 'Recyclables', 'Vegetables', 'Fruits'],
+          metrics: [['530+', 'Active Buyers'], ['310+', 'Shipments / yr'], ['8', 'Countries']]
+        },
+        africa: {
+          icon: '🌍', title: 'Africa',
+          desc: 'A fast-growing continent with expanding import needs across industries and agriculture. THEOS IMPEX is building new trade corridors to serve this emerging demand.',
+          tags: ['Agricultural', 'Industrial Metal', 'Plastic Scrap', 'Spices'],
+          metrics: [['380+', 'Active Buyers'], ['240+', 'Shipments / yr'], ['9', 'Countries']]
+        },
+        global: {
+          icon: '🌎', title: 'Other Markets',
+          desc: 'Beyond our core regions, THEOS IMPEX serves buyers across all international markets — the Americas, Oceania, and Central Asia. Wherever quality matters, we can source and deliver.',
+          tags: ['All Products', 'Custom Sourcing', 'Any Quantity'],
+          metrics: [['200+', 'Active Buyers'], ['150+', 'Shipments / yr'], ['Global', 'Reach']]
+        }
+      };
+
+      var panel = document.getElementById('regionPanel');
+      var rpIcon = document.getElementById('rpIcon');
+      var rpTitle = document.getElementById('rpTitle');
+      var rpDesc = document.getElementById('rpDesc');
+      var rpTags = document.getElementById('rpTags');
+      var rpMetrics = document.getElementById('rpMetrics');
+
+      function selectRegion(key) {
+        var r = regions[key];
+        if (!r) return;
+        rpIcon.textContent = r.icon;
+        rpTitle.textContent = r.title;
+        rpDesc.textContent = r.desc;
+        rpTags.innerHTML = r.tags.map(function (t) { return '<span class="region-tag">' + t + '</span>'; }).join('');
+        rpMetrics.innerHTML = r.metrics.map(function (m) {
+          return '<div><div class="region-metric-value">' + m[0] + '</div><div class="region-metric-label">' + m[1] + '</div></div>';
+        }).join('');
+        document.querySelectorAll('.wm-clickable').forEach(function (el) {
+          el.classList.toggle('active', el.getAttribute('data-region') === key);
+        });
+        panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      document.querySelectorAll('.wm-clickable').forEach(function (el) {
+        el.addEventListener('click', function () { selectRegion(el.getAttribute('data-region')); });
+      });
+
+      window.selectRegion = selectRegion;
+    })();
+  </script>
+
+  <!-- Accurate world map (D3 + TopoJSON) -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script src="../js/worldmap.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof window.renderWorldMap !== 'function') return;
+      window.renderWorldMap({
+        target: '#marketWorldMap',
+        width: 1000,
+        height: 520,
+        origin: [77.55, 8.07],
+        originLabel: 'Kanyakumari',
+        onSelect: function (key) { if (window.selectRegion) window.selectRegion(key); },
+        routes: [
+          { key: 'asia', lon: 103.8, lat: 1.35, label: 'Asia' },
+          { key: 'middleeast', lon: 55.27, lat: 25.2, label: 'Middle East' },
+          { key: 'europe', lon: 4.48, lat: 51.92, label: 'Europe' },
+          { key: 'africa', lon: 39.66, lat: -4.04, label: 'Africa' },
+          { key: 'global', lon: -74.0, lat: 40.7, label: 'Other Markets' }
+        ]
+      });
+    });
+  </script>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

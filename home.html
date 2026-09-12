@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THEOS IMPEX — Connecting Quality Products to Global Markets</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <!-- ============================================
+       SCROLL PROGRESS BAR
+       ============================================ -->
+  <div class="scroll-progress" style="width: 0%;"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="home.html" class="nav-logo">
+        <img src="images/logo.png" alt="THEOS IMPEX Logo">
+        <span class="nav-logo-text">THEOS IMPEX</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="pages/products.html">Products</a>
+        <a href="pages/market.html">Markets</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/contact.html" class="nav-cta">Get in Touch</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero">
+    <div class="hero-worldmap" id="heroWorldMap"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-particles"></div>
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-left">
+          <div class="hero-logo">
+            <img src="images/logo.png" alt="THEOS IMPEX Logo">
+          </div>
+          <h1 class="hero-title">
+            THEOS IMPEX<br>
+            <span class="gradient">Global Trade Partner</span>
+          </h1>
+          <p class="hero-tagline">Kanyakumari, India</p>
+          <p class="hero-description">
+            Bridging India's finest agricultural, marine, and industrial products with international markets. Quality, reliability, and trust — from the southern tip of India to the world.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/products.html" class="btn btn-primary">Explore Products</a>
+            <a href="pages/contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-stat-card">
+            <div class="hero-stat-card-value counter" data-count="10" data-suffix="+">0+</div>
+            <div class="hero-stat-card-label">Product Categories</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-card-value counter" data-count="5" data-suffix="+">0+</div>
+            <div class="hero-stat-card-label">Global Markets</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-card-value counter" data-count="100" data-suffix="%">0%</div>
+            <div class="hero-stat-card-label">Quality Focus</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-card-value counter" data-count="6" data-suffix=" days">0 days</div>
+            <div class="hero-stat-card-label">Work Week</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-ship" aria-hidden="true">
+      <div class="ship-bob">
+        <svg viewBox="0 0 120 120" fill="none">
+          <ellipse cx="60" cy="88" rx="34" ry="8" fill="rgba(0,0,0,0.25)"/>
+          <path d="M22,72 L84,72 L100,62 L22,62 Z" fill="#f5f7fa" stroke="#0e2a49" stroke-width="1.5"/>
+          <rect x="36" y="44" width="30" height="16" rx="2" fill="#123a63" stroke="#184c80" stroke-width="1"/>
+          <rect x="50" y="30" width="5" height="14" fill="#0a1d33"/>
+          <circle cx="52.5" cy="27" r="4.5" fill="#e0bb63"/>
+          <path d="M38,54 L86,54 L68,40 Z" fill="#fff" opacity="0.16"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-waves">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,40 C150,70 350,0 600,40 C850,80 1050,10 1200,40 L1200,80 L0,80 Z" fill="rgba(255,255,255,0.1)"/>
+        <path d="M0,50 C200,20 400,70 600,45 C800,20 1000,65 1200,50 L1200,80 L0,80 Z" fill="rgba(255,255,255,0.05)"/>
+        <path d="M0,60 C250,35 450,65 600,55 C750,45 950,70 1200,60 L1200,80 L0,80 Z" fill="rgba(255,255,255,0.15)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+
+
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section section-light" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up anim-delay-1">About Us</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-2">Welcome to THEOS IMPEX</h2>
+          <p class="section-subtitle anim anim-fade-in-up anim-delay-3">
+            A trusted name in international trade, based in the coastal city of Kanyakumari, India — connecting the best of Indian products with the world.
+          </p>
+        </div>
+
+        <div class="anim anim-fade-in-up anim-delay-2" style="max-width: 820px; margin: 0 auto 3rem;">
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">
+            THEOS IMPEX is a leading import-export company headquartered in Kanyakumari, Tamil Nadu, India. We specialize in sourcing and supplying a wide range of high-quality products including fresh agricultural produce, spices, seafood, metal scraps, and recyclable materials to markets across the globe.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem;">
+            Our commitment to quality, transparent dealings, and reliable logistics has earned us the trust of partners worldwide. We work closely with local farmers, manufacturers, and suppliers to ensure every product meets international standards.
+          </p>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.9;">
+            At THEOS IMPEX, we don't just trade products — we build lasting relationships that bridge markets and cultures across continents.
+          </p>
+        </div>
+
+        <div class="grid grid-2" data-stagger style="max-width: 900px; margin: 0 auto;">
+          <div class="card anim">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Quality Certified</h3>
+            <p class="card-text">All products sourced from certified suppliers meeting international quality standards.</p>
+          </div>
+          <div class="card anim">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Growing Exports</h3>
+            <p class="card-text">Expanding our global footprint with consistent growth across multiple markets.</p>
+          </div>
+          <div class="card anim">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Client-First</h3>
+            <p class="card-text">Every partnership is built on understanding and exceeding client expectations.</p>
+          </div>
+          <div class="card anim">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="card-title">24/7 Support</h3>
+            <p class="card-text">Round-the-clock support to ensure seamless trade operations and communication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTS PREVIEW SECTION
+         ============================================ -->
+    <section class="section section-light" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up anim-delay-1">Our Products</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-2">Quality Products for Global Markets</h2>
+          <p class="section-subtitle anim anim-fade-in-up anim-delay-3">
+            From farm-fresh produce to industrial materials — we deliver excellence across every category.
+          </p>
+        </div>
+
+        <div class="grid grid-3" data-stagger>
+          <!-- Product Card 01 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/vegetable.jpg" alt="Fresh Vegetables">
+              <span class="product-card-badge">Agriculture</span>
+              <span class="product-card-number">01</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Fresh Vegetables</h3>
+              <p class="product-card-desc">Farm-fresh vegetables sourced directly from local farms in Kanyakumari, ensuring quality and freshness.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Product Card 02 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/fruits.jpg" alt="Fresh Fruits">
+              <span class="product-card-badge">Agriculture</span>
+              <span class="product-card-number">02</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Fresh Fruits</h3>
+              <p class="product-card-desc">Premium tropical and seasonal fruits harvested at peak ripeness for export to global markets.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Product Card 03 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/spicevegetables.jpg" alt="Spices & Agricultural Products">
+              <span class="product-card-badge">Agriculture</span>
+              <span class="product-card-number">03</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Spices & Agricultural</h3>
+              <p class="product-card-desc">Authentic Indian spices and agricultural products renowned for their flavor and quality worldwide.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Product Card 04 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/seafood.jpg" alt="Seafood & Marine Products">
+              <span class="product-card-badge">Marine</span>
+              <span class="product-card-number">04</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Seafood & Marine</h3>
+              <p class="product-card-desc">Fresh and processed seafood from the rich coastal waters of southern India.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Product Card 05 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/metal.jpg" alt="Metal Scrap">
+              <span class="product-card-badge">Industrial</span>
+              <span class="product-card-number">05</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Metal Scrap</h3>
+              <p class="product-card-desc">Quality industrial metal scrap and ferrous/non-ferrous materials for recycling and manufacturing.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Product Card 06 -->
+          <div class="product-card anim" data-tilt>
+            <div class="product-card-image">
+              <img src="images/recycle.jpg" alt="Recyclable Materials">
+              <span class="product-card-badge">Recyclable</span>
+              <span class="product-card-number">06</span>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Recyclable Materials</h3>
+              <p class="product-card-desc">Sustainable recyclable materials including paper, plastic, and other recoverable resources.</p>
+              <a href="pages/products.html" class="product-card-link">Enquire &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 anim anim-fade-in-up anim-delay-2">
+          <a href="pages/products.html" class="btn btn-outline">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         WHY US SECTION
+         ============================================ -->
+    <section class="section section-light" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up anim-delay-1">Why Choose Us</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-2">Built on Trust &amp; Excellence</h2>
+          <p class="section-subtitle anim anim-fade-in-up anim-delay-3">
+            Our unwavering commitment to quality and reliability sets us apart in the global trade landscape.
+          </p>
+        </div>
+
+        <div class="grid grid-4" data-stagger>
+          <div class="card anim" data-tilt>
+            <div class="card-icon" style="font-size: 1.8rem; font-weight: 700; color: var(--accent);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Quality Assurance</h3>
+            <p class="card-text">Every product undergoes rigorous quality checks before shipment, ensuring compliance with international standards.</p>
+          </div>
+
+          <div class="card anim" data-tilt>
+            <div class="card-icon" style="font-size: 1.8rem; font-weight: 700; color: var(--accent);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Reliable Supply Chain</h3>
+            <p class="card-text">Efficient logistics and supply chain management ensure timely delivery to any destination worldwide.</p>
+          </div>
+
+          <div class="card anim" data-tilt>
+            <div class="card-icon" style="font-size: 1.8rem; font-weight: 700; color: var(--accent);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Customer-Centric</h3>
+            <p class="card-text">We tailor our services to meet unique client requirements with personalized trade solutions.</p>
+          </div>
+
+          <div class="card anim" data-tilt>
+            <div class="card-icon" style="font-size: 1.8rem; font-weight: 700; color: var(--accent);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Global Trade Expertise</h3>
+            <p class="card-text">Deep knowledge of international trade regulations, documentation, and market dynamics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         MARKETS SECTION
+         ============================================ -->
+    <section class="section section-light" id="markets">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label anim anim-fade-in-up anim-delay-1">Global Markets</span>
+          <h2 class="section-title anim anim-fade-in-up anim-delay-2">Connecting India to the World</h2>
+          <p class="section-subtitle anim anim-fade-in-up anim-delay-3">
+            Our trade network spans across major markets, delivering quality products wherever they're needed.
+          </p>
+        </div>
+
+        <div class="grid grid-4" data-stagger>
+          <div class="market-card anim">
+            <div class="market-icon">&#127759;</div>
+            <h3 class="market-name">Asia</h3>
+            <p class="market-desc">Serving markets across Southeast Asia, East Asia, and South Asia with agricultural and marine products.</p>
+          </div>
+
+          <div class="market-card anim">
+            <div class="market-icon">&#127758;</div>
+            <h3 class="market-name">Middle East</h3>
+            <p class="market-desc">Strong partnerships with traders and distributors across the Gulf and Middle Eastern markets.</p>
+          </div>
+
+          <div class="market-card anim">
+            <div class="market-icon">&#127757;</div>
+            <h3 class="market-name">Europe</h3>
+            <p class="market-desc">Exporting premium spices, seafood, and recyclable materials to European markets.</p>
+          </div>
+
+          <div class="market-card anim">
+            <div class="market-icon">&#127756;</div>
+            <h3 class="market-name">Africa</h3>
+            <p class="market-desc">Expanding trade across African nations with affordable quality products and industrial materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT CTA SECTION
+         ============================================ -->
+    <section class="section" style="padding: 5rem 0;">
+      <div class="container">
+        <div class="anim anim-fade-in-scale anim-delay-1" style="background: linear-gradient(135deg, var(--blue-700) 0%, var(--blue-600) 50%, var(--blue-800) 100%); border-radius: var(--radius-lg); padding: 4rem 3rem; text-align: center; position: relative; overflow: hidden;">
+          <div style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 60%);"></div>
+          <div style="position: relative; z-index: 1;">
+            <h2 style="font-family: var(--font-heading); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 1rem;">Ready to Partner with Us?</h2>
+            <p style="font-size: 1.1rem; color: var(--blue-100); margin-bottom: 2rem; max-width: 550px; margin-left: auto; margin-right: auto;">
+              Let's discuss how THEOS IMPEX can be your trusted trade partner for quality Indian products.
+            </p>
+            <a href="pages/contact.html" class="btn btn-primary" style="background: var(--white); color: var(--blue-900);">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="home.html" class="nav-logo" style="margin-bottom: 0.5rem;">
+            <img src="images/logo.png" alt="THEOS IMPEX" style="height: 36px;">
+            <span class="nav-logo-text" style="color: var(--text-on-dark);">THEOS IMPEX</span>
+          </a>
+          <p>A trusted import-export company based in Kanyakumari, India. Connecting quality Indian products to global markets with integrity and excellence.</p>
+          <div class="footer-socials mt-2">
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="pages/products.html">Products</a>
+            <a href="pages/market.html">Markets</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Products Links -->
+        <div>
+          <h4 class="footer-heading">Products</h4>
+          <div class="footer-links">
+            <a href="pages/products.html">Fresh Vegetables</a>
+            <a href="pages/products.html">Fresh Fruits</a>
+            <a href="pages/products.html">Spices &amp; Agricultural</a>
+            <a href="pages/products.html">Seafood &amp; Marine</a>
+            <a href="pages/products.html">Metal Scrap</a>
+            <a href="pages/products.html">Recyclable Materials</a>
+          </div>
+        </div>
+
+        <!-- Office Address -->
+        <div>
+          <h4 class="footer-heading">Office</h4>
+          <div class="footer-links">
+            <p style="color: var(--text-on-dark-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 0.5rem;">
+              THEOS IMPEX<br>
+              Kanyakumari,<br>
+              Tamil Nadu, India
+            </p>
+            <a href="mailto:info@theosimpex.com">info@theosimpex.com</a>
+            <a href="tel:+919361123843">+91 93611 23843</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 THEOS IMPEX. All rights reserved.</p>
+        <p>Delivering Quality. Building Trust. Connecting Markets.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       WHATSAPP FLOATING BUTTON
+       ============================================ -->
+  <a href="https://wa.me/919361123843" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ============================================
+       BACK TO TOP BUTTON
+       ============================================ -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script src="js/worldmap.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof window.renderWorldMap !== 'function') return;
+      var target = document.getElementById('heroWorldMap');
+      if (!target) return;
+      window.renderWorldMap({
+        target: '#heroWorldMap',
+        width: 1200,
+        height: 620,
+        origin: [77.55, 8.07],
+        originLabel: '',
+        decorative: true,
+        routes: [
+          { key: 'asia', lon: 103.8, lat: 1.35, label: '', clickable: false },
+          { key: 'middleeast', lon: 55.27, lat: 25.2, label: '', clickable: false },
+          { key: 'europe', lon: 4.48, lat: 51.92, label: '', clickable: false },
+          { key: 'africa', lon: 39.66, lat: -4.04, label: '', clickable: false }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
