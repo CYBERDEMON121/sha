@@ -14,35 +14,39 @@
   <style>
     /* Enlarge the logo */
     .splash-logo-wrap img {
-      width: 160px;
-      height: 160px;
+      width: 260px;
+      height: 260px;
       object-fit: contain;
     }
 
-    /* Frosted-glass container wrapping ONLY the name/title */
-    .splash-name-container {
-      display: inline-block;
-      padding: 18px 40px;
-      margin: 18px 0;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 18px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-    }
-
-    /* New font for the title */
-    .splash-title {
+    /* Large, glowing slogan */
+    .splash-quote {
       font-family: 'Poppins', 'Sora', sans-serif;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow:
+        0 0 10px rgba(120, 170, 255, 0.9),
+        0 0 24px rgba(120, 170, 255, 0.7),
+        0 0 48px rgba(47, 111, 237, 0.6);
+      letter-spacing: 0.02em;
+      margin-top: 24px;
+      animation: glow-pulse 2.5s ease-in-out infinite alternate;
     }
 
-    /* THEOS in blue */
-    .splash-brand {
-      color: #0a2472;
+    @keyframes glow-pulse {
+      from {
+        text-shadow:
+          0 0 10px rgba(120, 170, 255, 0.7),
+          0 0 20px rgba(120, 170, 255, 0.5),
+          0 0 36px rgba(47, 111, 237, 0.4);
+      }
+      to {
+        text-shadow:
+          0 0 16px rgba(120, 170, 255, 1),
+          0 0 32px rgba(120, 170, 255, 0.9),
+          0 0 64px rgba(47, 111, 237, 0.8);
+      }
     }
   </style>
 </head>
@@ -67,10 +71,6 @@
     <div class="splash-content">
       <div class="splash-logo-wrap">
         <img src="images/logo.png" alt="THEOS IMPEX Logo">
-      </div>
-
-      <div class="splash-name-container">
-        <h1 class="splash-title"><span class="splash-brand">THEOS</span> <span class="splash-fill">IMPEX</span></h1>
       </div>
 
       <p class="splash-quote">
