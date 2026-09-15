@@ -7,8 +7,44 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/theme.css">
+
+  <!-- Page-specific overrides for the splash screen branding -->
+  <style>
+    /* Enlarge the logo */
+    .splash-logo-wrap img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+    }
+
+    /* Frosted-glass container wrapping ONLY the name/title */
+    .splash-name-container {
+      display: inline-block;
+      padding: 18px 40px;
+      margin: 18px 0;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    /* New font for the title */
+    .splash-title {
+      font-family: 'Poppins', 'Sora', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      margin: 0;
+    }
+
+    /* THEOS in blue */
+    .splash-brand {
+      color: #2f6fed;
+    }
+  </style>
 </head>
 <body class="splash-body">
 
@@ -32,9 +68,13 @@
       <div class="splash-logo-wrap">
         <img src="images/logo.png" alt="THEOS IMPEX Logo">
       </div>
-      <h1 class="splash-title">THEOS <span class="splash-fill">IMPEX</span></h1>
+
+      <div class="splash-name-container">
+        <h1 class="splash-title"><span class="splash-brand">THEOS</span> <span class="splash-fill">IMPEX</span></h1>
+      </div>
+
       <p class="splash-quote">
-        "Delivering Quality. Building Trust. Connecting Markets."
+        "Trusted trade accorce border"
       </p>
     </div>
 
